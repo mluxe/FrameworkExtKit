@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>c3c88b11-062f-4e1b-87e8-ced11c7f8667</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>FrameworkExtKit.Services</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)DirectoryServices\DB\DbDirectoryAccount.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DirectoryServices\DB\DbDirectoryAccountService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DirectoryServices\DefaultDirectoryServiceFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DirectoryServices\DirectoryAccounts\ActiveDirectoryAccount.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DirectoryServices\DirectoryAccounts\ActiveDirectoryAccountService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DirectoryServices\DirectoryAccounts\DirectoryAccount.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DirectoryServices\DirectoryAccounts\DirectoryAccountService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DirectoryServices\DirectoryAccounts\LdapDirectoryAccountService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DirectoryServices\DirectoryDistributionLists\DirectoryDistributionList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DirectoryServices\DirectoryDistributionLists\DirectoryDistributionListService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DirectoryServices\DirectoryGroups\DirectoryGroup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DirectoryServices\DirectoryGroups\DirectoryGroupService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DirectoryServices\DirectoryRoleAccounts\DirectoryRoleAccount.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DirectoryServices\DirectoryRoleAccounts\DirectoryRoleAccountService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DirectoryServices\IDirectoryAccountService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DirectoryServices\IDirectoryDistributionListService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DirectoryServices\IDirectoryGroupService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DirectoryServices\IDirectoryRoleAccountService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DirectoryServices\IDirectoryServiceFactory.cs" />
+  </ItemGroup>
+</Project>

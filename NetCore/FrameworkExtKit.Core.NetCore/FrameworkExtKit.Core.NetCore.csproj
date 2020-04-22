@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>FrameworkExtKit.Core</RootNamespace>
+    <AssemblyName>FrameworkExtKit.Core</AssemblyName>
+    <Product>Framework Extension Kit - Core</Product>
+    <Company>Leyun Ltd (UK)</Company>
+    <Authors>Yufei Liu &lt;feilfly@gmail.com&gt;</Authors>
+<AssemblyVersion>2.1.0.0</AssemblyVersion>
+<FileVersion>2.1.0.0</FileVersion>
+<Version>2.1.0</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;DEBUG;NETCORE</DefineConstants>
+    <OutputPath>..\..\build\bin\Debug\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>TRACE;NETCORE</DefineConstants>
+    <OutputPath>..\..\build\bin\Release</OutputPath>
+  </PropertyGroup>
+
+  <Import Project="..\..\src\FrameworkExtKit.Core\FrameworkExtKit.Core.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.9.1" />
+    <PackageReference Include="MailKit" Version="2.1.4" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor" Version="2.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="2.1.10" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Z.EntityFramework.Plus.EFCore" Version="2.0.7" />
+  </ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="&quot;$(ProjectDir)..\Utilities\BuildEvents\PostBuild.bat&quot; $(SolutionName) $(ProjectName) &quot;$(ProjectDir)&quot; &quot;$(TargetPath)&quot; $(ConfigurationName)" />
+  </Target>
+
+</Project>

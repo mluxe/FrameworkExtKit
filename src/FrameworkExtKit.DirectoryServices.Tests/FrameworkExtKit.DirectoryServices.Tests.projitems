@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>45418141-40de-4f12-87ef-65e6ade7c5e2</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>FrameworkExtKit.Services.Tests.DirectoryServices</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Fixtures\LDAPUsers.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Services\DirectoryServices\LdapDirectoryRoleAccountServiceTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\DirectoryServices\LdapDirectoryGroupServiceTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\DirectoryServices\LdapDirectoryDistributionListServiceTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\DirectoryServiceUsageTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\DirectoryServices\ActiveDirectoryAccountServiceTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\DirectoryServices\DB\DbDirectoryAccountServiceTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\DirectoryServices\LdapDirectoryAccountServiceTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\DirectoryServices\Linq\LdapQueryTranslatorTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\DirectoryServices\MemoryDirectoryAccountServiceTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\DirectoryServices\DirectoryAccountServiceTest.cs" />
+  </ItemGroup>
+</Project>

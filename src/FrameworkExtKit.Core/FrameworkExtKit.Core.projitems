@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>c288a3f2-a42f-4db3-9f8b-85511e09eda0</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>FrameworkExtKit.Core</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Data.Entity\Facades\IJoinEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data.Entity\Facades\JoinCollectionFacade.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data.Entity\Repositories\IQueryableRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data.Entity\Repositories\Repository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data.Entity\Repositories\RepositoryPool.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data.Entity\Repositories\Repository_IQueryable_Impl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data.Entity\Validation\DbEntityValidationException_Ext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataReaders\DefaultDataReaderFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataReaders\DataSourceError.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataReaders\ExcelDataReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataReaders\Exceptions\DataReaderException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataReaders\IDataReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataReaders\IDataReaderFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Data.Entity.Migrations\Extensions\DbMigrationExtension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Data.Entity.Migrations\Extensions\DbMigrationsConfigurationExtension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DocumentBuilder\SimpleSpreadsheetDocumentBuilder.cs" />
+  </ItemGroup>
+</Project>

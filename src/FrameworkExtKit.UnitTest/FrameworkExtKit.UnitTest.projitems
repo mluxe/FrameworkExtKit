@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>197b9991-e0a0-4b19-8266-898cd42763e7</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>FrameworkExtKit.UnitTest</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Services\DirectoryService\Fixtures\MemoryDirectoryAccounts.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\DirectoryService\MemoryDirectoryAccount.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\DirectoryService\MemoryDirectoryService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\DirectoryService\MemoryDirectoryAccountService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Utilities\MemoryDirectoryAccountGenerator.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Utilities\README.txt" />
+  </ItemGroup>
+</Project>

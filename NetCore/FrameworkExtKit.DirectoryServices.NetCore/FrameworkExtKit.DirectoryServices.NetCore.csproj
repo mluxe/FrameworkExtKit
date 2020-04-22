@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <Product>Framework Extension Kit - Directory Service</Product>
+    <Company>Leyun Ltd (UK)</Company>
+    <Authors>Yufei Liu &lt;feilfly@gmail.com&gt;</Authors>
+<AssemblyVersion>4.2.0.0</AssemblyVersion>
+<FileVersion>4.2.0.0</FileVersion>
+    <PackageId>FrameworkExtKit.DirectoryService</PackageId>
+    <AssemblyName>FrameworkExtKit.DirectoryService</AssemblyName>
+    <RootNamespace>FrameworkExtKit.Services.DirectoryServices</RootNamespace>
+    <Version>4.2.0</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;DEBUG;NETCORE</DefineConstants>
+    <OutputPath>..\..\build\bin\Debug\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\..\build\bin\Release</OutputPath>
+    <DefineConstants>TRACE;NETCORE</DefineConstants>
+  </PropertyGroup>
+
+  <Import Project="..\..\src\FrameworkExtKit.DirectoryServices\FrameworkExtKit.DirectoryServices.projitems" Label="Shared" />
+
+  <Import Project="..\..\src\FrameworkExtKit.DirectoryServices.Extended\FrameworkExtKit.DirectoryServices.Extended.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="2.1.10" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.1.1" />
+    <PackageReference Include="Novell.Directory.Ldap.NETStandard2_0" Version="3.1.0" />
+  </ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="&quot;$(ProjectDir)..\Utilities\BuildEvents\PostBuild.bat&quot; $(SolutionName) $(ProjectName) &quot;$(ProjectDir)&quot; &quot;$(TargetPath)&quot; $(ConfigurationName)" />
+  </Target>
+
+</Project>
