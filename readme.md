@@ -200,9 +200,10 @@ class SampleRoleAccount : DirectoryRoleAccount {
 class SampleDistributionList : DirectoryDistributionList {
     // add properties
 }
+```
 
 ### use the services to search ldap
-```
+
 ```cs
 IDirectoryAccountService<SampleAccount>         account_service = new LdapDirectoryAccountService<SampleAccount>();
 IDirectoryAccountService<SampleGroup>           group_service = new LdapDirectoryAccountService<SampleGroup>();
