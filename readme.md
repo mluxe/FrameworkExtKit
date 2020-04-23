@@ -184,7 +184,8 @@ IEnumerable<Server> servers = service.Where(s => s.IP.Contains("10.0.0.2"));
 
 ```cs
 class SampleAccount : DirectoryAccount {
-    [DirectoryProperty("localcountry)]
+    [DirectoryProperty("localcountry")]
+    
     public string ResidentCountry { get; set; }
     //....  and other properties
 }
