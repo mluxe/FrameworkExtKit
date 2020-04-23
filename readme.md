@@ -2,8 +2,8 @@
 ![Build](https://github.com/feilfly/FrameworkExtKit/workflows/Build/badge.svg?branch=master)
 
 # Ldap Directory Service API
-
-## appsettings.json sample
+## Configurations
+### .Net Core appsettings.json sample
 ```json
     {
       "ConnectionStrings": {
@@ -31,30 +31,8 @@
     }
 ```
 
-## Package Dependencies (.Net 4.5)
 
-### For MVC 5
-
-Install-Package Newtonsoft.Json -Version 12.0.1
-
-// Install Entity Framework
-Install-Package EntityFramework -Version 6.2.0
-Install-Package Z.EntityFramework.Plus.EF6  -Version 1.10.2
-
-// Optional - Install Rotativa - PDF generator
-Install-Package Rotativa -Version 1.6.4
-
-### Microsoft Excel Support
-Install-Package DocumentFormat.OpenXml -Version 2.9.1
-
-### NUnit Test Framework, only on Tests projects
-
-// remember to install NUnitTestAdapter extension in VS
-Install-Package NUnit -Version 3.12.0
-Install-Package NUnit3TestAdapter -Version 3.13.0
-Install-Package Moq -Version 4.10.1
-
-## Web.Config
+### .Net Framework 4.5 App.Config/Web.Config
 ```xml
   <connectionStrings>
     <add name="DBDirectoryService" connectionString="data source=(localdb)\MSSQLLocalDB;integrated security=true;initial catalog=DBDirectoryService_Public;" providerName="System.Data.SqlClient" />
