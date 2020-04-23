@@ -1,33 +1,7 @@
 
-## Package Dependencies (.NetCore 2.1)
+![Build](https://github.com/feilfly/FrameworkExtKit/workflows/Build/badge.svg?branch=master)
 
-### Basic Requirements
-
-Install-Package Microsoft.EntityFrameworkCore.Tools -Version 2.1.11
-
-Install-Package Microsoft.EntityFrameworkCore -Version 2.1.11
-
-Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 2.1.11
-
-Install-Package Z.EntityFramework.Plus.EFCore -Version 2.0.7
-
-Install-Package Newtonsoft.Json -Version 12.0.2
-
-#### 
-
-Install-Package Novell.Directory.Ldap.NETStandard2_0 -Version 3.1.0
-
-
-### Unit Testing
-Install-Package NUnit -Version 3.12.0
-
-Install-Package NUnit3TestAdapter -Version 3.13.0
-
-Install-Package Moq -Version 4.10.1
-
-### Microsoft Excel Support
-
-Install-Package DocumentFormat.OpenXml -Version 2.9.1
+# Ldap Directory Service API
 
 ## appsettings.json sample
 ```json
