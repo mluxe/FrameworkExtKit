@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace FrameworkExtKit.Services.Tests.DirectoryServices {
     [TestFixture]
-	[Author("Yufei Liu", "yliu@leyun.co.uk")]
+	[Author("Yufei Liu", "feilfly@gmail.com")]
     public class DirectoryServiceUsageTest {
 
         protected IDirectoryAccountService service;

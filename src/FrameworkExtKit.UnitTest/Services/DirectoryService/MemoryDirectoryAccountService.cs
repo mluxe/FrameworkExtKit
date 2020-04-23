@@ -23,7 +23,7 @@ namespace FrameworkExtKit.UnitTest.Services.DirectoryService {
      * 2. then use this method to create a directory instance
      *      DirectoryAccountService.GetUserDirectoryInstance()
      * 
-     * By: Yufei Liu <yliu@leyun.co.uk>
+     * By: Yufei Liu <feilfly@gmail.com>
      * Date: 11th June, 2015 @ Gatwick, UK
      * 
      */

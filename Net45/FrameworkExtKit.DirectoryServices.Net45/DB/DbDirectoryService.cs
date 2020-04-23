@@ -30,7 +30,7 @@ namespace FrameworkExtKit.Services.DirectoryServices.DB {
      * 4. then use this method to create a directory instance
      *      DirectoryAccountService.GetUserDirectoryInstance()
      * 
-     * By: Yufei Liu <yliu@leyun.co.uk>
+     * By: Yufei Liu <feilfly@gmail.com>
      * Date: 8th May, 2015 @ Gatwick, UK
      * 
      */

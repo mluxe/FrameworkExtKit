@@ -16,7 +16,7 @@ namespace FrameworkExtKit.Services.DirectoryServices {
      * This is the base class of the DirectoryAccount
      * 
      *          
-     * By: Yufei Liu <yliu@leyun.co.uk>
+     * By: Yufei Liu <feilfly@gmail.com>
      * Date: 12th Nov, 2014 @ UK
      */
     public partial class DirectoryAccount : DirectoryEntity {

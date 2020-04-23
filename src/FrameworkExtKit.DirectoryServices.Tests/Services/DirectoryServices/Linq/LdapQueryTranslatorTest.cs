@@ -8,7 +8,7 @@ using System.Linq.Expressions;
 
 namespace FrameworkExtKit.Services.Tests.DirectoryServices.Linq {
     [TestFixture]
-	[Author("Yufei Liu", "yliu@leyun.co.uk")]
+	[Author("Yufei Liu", "feilfly@gmail.com")]
     public class LdapQueryTranslatorTest {
 
         LdapQueryTranslator translator;

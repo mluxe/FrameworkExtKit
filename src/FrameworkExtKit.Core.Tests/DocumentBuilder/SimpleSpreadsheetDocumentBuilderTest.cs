@@ -7,7 +7,7 @@ using System.IO;
 namespace FrameworkExtKit.Core.Tests.DocumentBuilder {
 
     [TestFixture]
-    [Author("Yufei Liu", "yliu@leyun.co.uk")]
+    [Author("Yufei Liu", "feilfly@gmail.com")]
     public class SimpleSpreadsheetDocumentBuilderTest {
         // SimpleSpreadsheetDocumentBuilder builder;
         String Folder;

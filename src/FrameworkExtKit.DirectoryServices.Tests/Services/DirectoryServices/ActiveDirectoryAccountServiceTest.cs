@@ -5,7 +5,7 @@ using System;
 namespace FrameworkExtKit.Services.Tests.DirectoryServices {
 
     [TestFixture]
-	[Author("Yufei Liu", "yliu@leyun.co.uk")]
+	[Author("Yufei Liu", "feilfly@gmail.com")]
     [Ignore("please update the unit test to fit your ldap structure")]
     public partial class ActiveDirectoryAccountServiceTest : DirectoryAccountServiceTest {
 

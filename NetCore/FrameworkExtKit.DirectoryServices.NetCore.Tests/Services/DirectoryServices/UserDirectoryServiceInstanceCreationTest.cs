@@ -6,7 +6,7 @@ using System.Configuration;
 
 namespace FrameworkExtKit.Services.Tests.DirectoryServices {
     [TestFixture]
-	[Author("Yufei Liu", "yliu@leyun.co.uk")]
+	[Author("Yufei Liu", "feilfly@gmail.com")]
     public class DirectoryAccountServiceInstanceCreationTest {
         [Test]
         [Ignore("code migration not completed")]

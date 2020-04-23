@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F3E7D96A-5952-48C8-AA11-53177EE08E8F}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FrameworkExtKit.Core", "src\FrameworkExtKit.Core\FrameworkExtKit.Core.shproj", "{C288A3F2-A42F-4DB3-9F8B-85511E09EDA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameworkExtKit.Core.Net45", "Net45\FrameworkExtKit.Core.Net45\FrameworkExtKit.Core.Net45.csproj", "{911BAD36-43E9-4D4D-8CDD-EDD3E42F966E}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FrameworkExtKit.UnitTest", "src\FrameworkExtKit.UnitTest\FrameworkExtKit.UnitTest.shproj", "{197B9991-E0A0-4B19-8266-898CD42763E7}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FrameworkExtKit.DirectoryServices", "src\FrameworkExtKit.DirectoryServices\FrameworkExtKit.DirectoryServices.shproj", "{75132C17-BF88-4641-A2C0-FB813C9432DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameworkExtKit.DirectoryServices.Net45", "Net45\FrameworkExtKit.DirectoryServices.Net45\FrameworkExtKit.DirectoryServices.Net45.csproj", "{1162D896-7BCE-4C38-8255-7B95AF0AE64E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{95278FCD-F611-4063-9FE1-C732B0213E59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameworkExtKit.DirectoryServices.Net45.Tests", "Net45\FrameworkExtKit.DirectoryServices.Net45.Tests\FrameworkExtKit.DirectoryServices.Net45.Tests.csproj", "{BEC77727-970C-4B60-AD9D-A00A8395450A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7900F023-0079-47B3-B3C7-D1BB4D55F503}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FrameworkExtKit.DirectoryServices.Tests", "src\FrameworkExtKit.DirectoryServices.Tests\FrameworkExtKit.DirectoryServices.Tests.shproj", "{45418141-40DE-4F12-87EF-65E6ADE7C5E2}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FrameworkExtKit.Core.Tests", "src\FrameworkExtKit.Core.Tests\FrameworkExtKit.Core.Tests.shproj", "{FCFB6DB1-F727-453C-AA09-E02085E125B4}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FrameworkExtKit.DirectoryServices.Extended", "src\FrameworkExtKit.DirectoryServices.Extended\FrameworkExtKit.DirectoryServices.Extended.shproj", "{C3C88B11-062F-4E1B-87E8-CED11C7F8667}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		src\FrameworkExtKit.DirectoryServices.Extended\FrameworkExtKit.DirectoryServices.Extended.projitems*{1162d896-7bce-4c38-8255-7b95af0ae64e}*SharedItemsImports = 4
+		src\FrameworkExtKit.DirectoryServices\FrameworkExtKit.DirectoryServices.projitems*{1162d896-7bce-4c38-8255-7b95af0ae64e}*SharedItemsImports = 4
+		src\FrameworkExtKit.UnitTest\FrameworkExtKit.UnitTest.projitems*{197b9991-e0a0-4b19-8266-898cd42763e7}*SharedItemsImports = 13
+		src\FrameworkExtKit.DirectoryServices.Tests\FrameworkExtKit.DirectoryServices.Tests.projitems*{45418141-40de-4f12-87ef-65e6ade7c5e2}*SharedItemsImports = 13
+		src\FrameworkExtKit.DirectoryServices\FrameworkExtKit.DirectoryServices.projitems*{75132c17-bf88-4641-a2c0-fb813c9432db}*SharedItemsImports = 13
+		src\FrameworkExtKit.Core\FrameworkExtKit.Core.projitems*{911bad36-43e9-4d4d-8cdd-edd3e42f966e}*SharedItemsImports = 4
+		src\FrameworkExtKit.DirectoryServices.Tests\FrameworkExtKit.DirectoryServices.Tests.projitems*{bec77727-970c-4b60-ad9d-a00a8395450a}*SharedItemsImports = 4
+		src\FrameworkExtKit.UnitTest\FrameworkExtKit.UnitTest.projitems*{bec77727-970c-4b60-ad9d-a00a8395450a}*SharedItemsImports = 4
+		src\FrameworkExtKit.Core\FrameworkExtKit.Core.projitems*{c288a3f2-a42f-4db3-9f8b-85511e09eda0}*SharedItemsImports = 13
+		src\FrameworkExtKit.DirectoryServices.Extended\FrameworkExtKit.DirectoryServices.Extended.projitems*{c3c88b11-062f-4e1b-87e8-ced11c7f8667}*SharedItemsImports = 13
+		src\FrameworkExtKit.Core.Tests\FrameworkExtKit.Core.Tests.projitems*{fcfb6db1-f727-453c-aa09-e02085e125b4}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{911BAD36-43E9-4D4D-8CDD-EDD3E42F966E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{911BAD36-43E9-4D4D-8CDD-EDD3E42F966E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{911BAD36-43E9-4D4D-8CDD-EDD3E42F966E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{911BAD36-43E9-4D4D-8CDD-EDD3E42F966E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1162D896-7BCE-4C38-8255-7B95AF0AE64E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1162D896-7BCE-4C38-8255-7B95AF0AE64E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1162D896-7BCE-4C38-8255-7B95AF0AE64E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1162D896-7BCE-4C38-8255-7B95AF0AE64E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEC77727-970C-4B60-AD9D-A00A8395450A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEC77727-970C-4B60-AD9D-A00A8395450A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEC77727-970C-4B60-AD9D-A00A8395450A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEC77727-970C-4B60-AD9D-A00A8395450A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C288A3F2-A42F-4DB3-9F8B-85511E09EDA0} = {F3E7D96A-5952-48C8-AA11-53177EE08E8F}
+		{197B9991-E0A0-4B19-8266-898CD42763E7} = {F3E7D96A-5952-48C8-AA11-53177EE08E8F}
+		{75132C17-BF88-4641-A2C0-FB813C9432DB} = {F3E7D96A-5952-48C8-AA11-53177EE08E8F}
+		{BEC77727-970C-4B60-AD9D-A00A8395450A} = {95278FCD-F611-4063-9FE1-C732B0213E59}
+		{7900F023-0079-47B3-B3C7-D1BB4D55F503} = {F3E7D96A-5952-48C8-AA11-53177EE08E8F}
+		{45418141-40DE-4F12-87EF-65E6ADE7C5E2} = {7900F023-0079-47B3-B3C7-D1BB4D55F503}
+		{FCFB6DB1-F727-453C-AA09-E02085E125B4} = {7900F023-0079-47B3-B3C7-D1BB4D55F503}
+		{C3C88B11-062F-4E1B-87E8-CED11C7F8667} = {F3E7D96A-5952-48C8-AA11-53177EE08E8F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F3EB82A-755E-434F-BC4C-116606E90542}
+	EndGlobalSection
+EndGlobal

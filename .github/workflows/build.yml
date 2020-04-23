@@ -1,0 +1,39 @@
+name: Build
+
+on:
+  push:
+    branches: [ master, develop, workflow ]
+  pull_request:
+    branches: [ master, develop, workflow ]
+
+jobs:
+  build_netcore:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.101
+    - name: Install dependencies
+      run: dotnet restore FrameworkExtKit.NetCore.sln
+    - name: Build
+      run: dotnet build FrameworkExtKit.NetCore.sln --configuration Release --no-restore
+    - name: Test
+      run: dotnet test FrameworkExtKit.NetCore.sln --no-restore --verbosity normal
+      
+  build_net45:
+      runs-on: windows-latest
+
+      steps:
+      - uses: actions/checkout@v1
+      - name: Setup Nuget.exe
+        uses: warrenbuckley/Setup-Nuget@v1
+      - name: Restore packages
+        run: nuget restore FrameworkExtKit.Net45.sln
+      - name: Setup MSBuild.exe
+        uses: warrenbuckley/Setup-MSBuild@v1
+      - name: Build with MSBuild
+        run: msbuild  FrameworkExtKit.Net45.sln -p:Configuration=Release

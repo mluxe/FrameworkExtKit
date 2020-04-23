@@ -34,7 +34,7 @@ namespace FrameworkExtKit.Services.DirectoryServices {
     /// 3. then use this method to create a directory instance
     ///      DirectoryAccountService.GetUserDirectoryInstance()
     ///
-    /// By: Yufei Liu <yliu@leyun.co.uk>
+    /// By: Yufei Liu <feilfly@gmail.com>
     /// Date: 12th Nov, 2014 @ Gatwick, UK
     /// </summary>
     public class LdapDirectoryAccountService : LdapDirectoryAccountService<DirectoryAccount>, IDirectoryAccountService {

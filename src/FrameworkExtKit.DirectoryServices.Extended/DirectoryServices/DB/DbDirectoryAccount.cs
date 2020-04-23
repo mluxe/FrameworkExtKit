@@ -16,7 +16,7 @@ namespace FrameworkExtKit.Services.DirectoryServices.DB {
      * 
      * The DBDirectoryAccount class is a sub class of the DirectoryAccount
      * 
-     * By: Yufei Liu <yliu@leyun.co.uk>
+     * By: Yufei Liu <feilfly@gmail.com>
      * Date: 8th May, 2015 @ Gatwick, UK
      * 
      * SQL to create the LDAPUsers Database

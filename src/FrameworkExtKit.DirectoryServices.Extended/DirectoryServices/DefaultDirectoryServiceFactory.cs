@@ -40,7 +40,7 @@ namespace FrameworkExtKit.Services.DirectoryServices {
      *      note: you still need to add the DirectoryAccountService.RootEntryPath parameter
      *          in the config file.
      *          
-    * By: Yufei Liu <yliu@leyun.co.uk>
+    * By: Yufei Liu <feilfly@gmail.com>
     * Date: 12th Nov, 2014 @ Gatwick, UK
      */
 #if NET45

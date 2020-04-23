@@ -12,7 +12,7 @@ using System.Threading.Tasks;
  * The MemoryDirectoryService is developed as a utility to help with the unit testing
  * so we do not have to change the unit testing code when LDAP reporting structure changes
  * 
- * By: Yufei Liu <yliu@leyun.co.uk>
+ * By: Yufei Liu <feilfly@gmail.com>
  * Date: 11th June, 2015 @ Gatwick, UK
  * 
  */
