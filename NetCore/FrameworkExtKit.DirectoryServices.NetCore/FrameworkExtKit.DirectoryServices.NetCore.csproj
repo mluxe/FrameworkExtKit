@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <Product>Framework Extension Kit - Directory Service</Product>
-    <Company>Leyun Ltd (UK)</Company>
+    <Company></Company>
     <Authors>Yufei Liu &lt;feilfly@gmail.com&gt;</Authors>
 <AssemblyVersion>4.2.0.0</AssemblyVersion>
 <FileVersion>4.2.0.0</FileVersion>
@@ -11,6 +11,7 @@
     <AssemblyName>FrameworkExtKit.DirectoryService</AssemblyName>
     <RootNamespace>FrameworkExtKit.Services.DirectoryServices</RootNamespace>
     <Version>4.2.0</Version>
+    <Copyright>Copyright © Yufei Liu 2020</Copyright>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

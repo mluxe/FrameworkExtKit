@@ -5,11 +5,12 @@
     <RootNamespace>FrameworkExtKit.Core</RootNamespace>
     <AssemblyName>FrameworkExtKit.Core</AssemblyName>
     <Product>Framework Extension Kit - Core</Product>
-    <Company>Leyun Ltd (UK)</Company>
+    <Company></Company>
     <Authors>Yufei Liu &lt;feilfly@gmail.com&gt;</Authors>
 <AssemblyVersion>2.1.0.0</AssemblyVersion>
 <FileVersion>2.1.0.0</FileVersion>
 <Version>2.1.0</Version>
+<Copyright>Copyright © Yufei Liu 2020</Copyright>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

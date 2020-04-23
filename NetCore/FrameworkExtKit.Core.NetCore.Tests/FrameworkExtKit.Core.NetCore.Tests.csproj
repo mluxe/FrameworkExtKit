@@ -10,6 +10,18 @@
     <RootNamespace>FrameworkExtKit.Core.NetCore.Tests</RootNamespace>
 
     <Version>1.1.0</Version>
+
+    <Authors>Yufei Liu &lt;feilfly@gmail.com&gt;</Authors>
+
+    <Company></Company>
+
+    <Copyright>Copyright © Yufei Liu 2020</Copyright>
+
+    <Description>This is the FrameworkExtKit Core test project</Description>
+
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+
+    <Product>FrameworkExtKit.Core.NetCore.Tests</Product>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

@@ -8,10 +8,10 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Framework Extension Kit - Core")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Leyun IT Solution (UK)")]
+[assembly: AssemblyCompany("Yufei Liu <feilfly@gmail.com>")]
 [assembly: AssemblyProduct("Framework Extension Kit")]
-[assembly: AssemblyCopyright("Copyright © Leyun Ltd (UK) 2020")]
-[assembly: AssemblyTrademark("Dolphin.Net")]
+[assembly: AssemblyCopyright("Copyright © Yufei Liu 2020")]
+[assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
