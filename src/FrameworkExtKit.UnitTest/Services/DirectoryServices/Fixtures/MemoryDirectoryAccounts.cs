@@ -5,7 +5,7 @@ using System.Reflection;
 
 
 
-namespace FrameworkExtKit.UnitTest.Services.DirectoryService.Fixtures {
+namespace FrameworkExtKit.UnitTest.Services.DirectoryServices.Fixtures {
 
     /**
      *
@@ -25,7 +25,7 @@ namespace FrameworkExtKit.UnitTest.Services.DirectoryService.Fixtures {
          */
         // System Role
         #region sysadmin
-        public static DirectoryAccount SysAdmin = new MemoryDirectoryAccount() {
+        public static DirectoryAccount SysAdmin = new DirectoryAccount() {
             ObjectClass = "Person",
             Alias = "sysadmin",
             SurName = "Administrator",
@@ -63,7 +63,7 @@ namespace FrameworkExtKit.UnitTest.Services.DirectoryService.Fixtures {
         #endregion
 
         #region Unregisterd Dummy User
-        public static DirectoryAccount UnregisteredUser = new MemoryDirectoryAccount() {
+        public static DirectoryAccount UnregisteredUser = new DirectoryAccount() {
             ObjectClass = "Person",
             Alias = "Unregistered-User",
             SurName = "Unregistered",
@@ -102,7 +102,7 @@ namespace FrameworkExtKit.UnitTest.Services.DirectoryService.Fixtures {
         // Team members
 
         #region Alan 
-        public static DirectoryAccount ALoon = new MemoryDirectoryAccount() {
+        public static DirectoryAccount ALoon = new DirectoryAccount() {
             ObjectClass = "Person",
             Alias = "ARoony",
             SurName = "Roony",
@@ -140,7 +140,7 @@ namespace FrameworkExtKit.UnitTest.Services.DirectoryService.Fixtures {
         };
         #endregion
         #region KLi5
-        public static DirectoryAccount KLi5 = new MemoryDirectoryAccount() {
+        public static DirectoryAccount KLi5 = new DirectoryAccount() {
             ObjectClass = "Person",
             Alias = "KLi5",
             SurName = "Li",
@@ -178,7 +178,7 @@ namespace FrameworkExtKit.UnitTest.Services.DirectoryService.Fixtures {
         };
         #endregion
         #region LYufei
-        public static DirectoryAccount LYufei = new MemoryDirectoryAccount() {
+        public static DirectoryAccount LYufei = new DirectoryAccount() {
             ObjectClass = "Person",
             Alias = "LYufei",
             SurName = "Liu",
@@ -216,7 +216,7 @@ namespace FrameworkExtKit.UnitTest.Services.DirectoryService.Fixtures {
         };
         #endregion
         #region VGrandhi
-        public static DirectoryAccount VGrandhi = new MemoryDirectoryAccount() {
+        public static DirectoryAccount VGrandhi = new DirectoryAccount() {
             ObjectClass = "Person",
             Alias = "VGrandhi",
             SurName = "Grandhi",

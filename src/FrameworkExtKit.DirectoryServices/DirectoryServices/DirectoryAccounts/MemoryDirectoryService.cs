@@ -1,5 +1,4 @@
 ﻿using FrameworkExtKit.Services.DirectoryServices;
-using FrameworkExtKit.UnitTest.Services.DirectoryService.Fixtures;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +8,7 @@ using System.Threading.Tasks;
 
 
 
-namespace FrameworkExtKit.UnitTest.Services.DirectoryService {
+namespace FrameworkExtKit.Services.DirectoryServices {
 
     /**
      *
@@ -23,16 +22,16 @@ namespace FrameworkExtKit.UnitTest.Services.DirectoryService {
      * 2. then use this method to create a directory instance
      *      DirectoryAccountService.GetUserDirectoryInstance()
      * 
-     * By: Yufei Liu <feilfly@gmail.com>
+     * By: Yufei Liu <yliu@leyun.co.uk>
      * Date: 11th June, 2015 @ Gatwick, UK
      * 
      */
-    public partial class MemoryDirectoryService<T> : DirectoryAccountService<T> where T:DirectoryAccount {
-        private IList<T> memoryDirectoryAccounts;
+    public partial class MemoryDirectoryService<T> : DirectoryService<T> where T:DirectoryEntity {
+        private IList<T> memoryDirectoryEntities;
 
         public MemoryDirectoryService(IEnumerable<T> data) {
-            this.memoryDirectoryAccounts = data.ToList();
-            this.ObjectClass = "Person";
+            this.memoryDirectoryEntities = data.ToList();
+            this.ObjectClass = "*";
         }
 
         //public override IEnumerable<TEntity> Find<TEntity>(Type type, Expression<Func<TEntity, bool>> predicate) {
@@ -51,23 +50,23 @@ namespace FrameworkExtKit.UnitTest.Services.DirectoryService {
 
         public override IEnumerable<T> Where(Expression<Func<T, bool>> predicate) {
             //var p2 = predicate as Expression<Func<T, bool>>;
-            return memoryDirectoryAccounts.Where(predicate.Compile());
+            return memoryDirectoryEntities.Where(predicate.Compile());
         }
 
         public override T Single(Expression<Func<T, bool>> predicate) {
-            return memoryDirectoryAccounts.Single(predicate.Compile());
+            return memoryDirectoryEntities.Single(predicate.Compile());
         }
 
         public override T SingleOrDefault(Expression<Func<T, bool>> predicate) {
-            return memoryDirectoryAccounts.SingleOrDefault(predicate.Compile());
+            return memoryDirectoryEntities.SingleOrDefault(predicate.Compile());
         }
 
         public override T First(Expression<Func<T, bool>> predicate) {
-            return memoryDirectoryAccounts.First(predicate.Compile());
+            return memoryDirectoryEntities.First(predicate.Compile());
         }
 
         public override T FirstOrDefault(Expression<Func<T, bool>> predicate) {
-            return memoryDirectoryAccounts.FirstOrDefault(predicate.Compile());
+            return memoryDirectoryEntities.FirstOrDefault(predicate.Compile());
         }
     }
 }

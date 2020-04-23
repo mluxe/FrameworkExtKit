@@ -30,7 +30,7 @@ namespace FrameworkExtKit.Services.Tests.DirectoryServices.DB {
         }
 
         protected override void test_ldap_record_yufei(DirectoryAccount user) {
-            Assert.IsNotNull(user);
+            Assert.IsNotNull(user); 
 
             Assert.Multiple(() => {
                 Assert.AreEqual("contractor", user.EmployeeType);

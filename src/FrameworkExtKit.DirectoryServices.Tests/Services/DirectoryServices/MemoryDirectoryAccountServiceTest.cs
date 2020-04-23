@@ -1,5 +1,5 @@
 ﻿using FrameworkExtKit.Services.DirectoryServices;
-using FrameworkExtKit.UnitTest.Services.DirectoryService;
+using FrameworkExtKit.UnitTest.Services.DirectoryServices;
 using NUnit.Framework;
 using System.Collections.Generic;
 using System.Linq;

@@ -39,6 +39,11 @@ namespace FrameworkExtKit.Services.DirectoryServices {
 
         #endregion
 
+
+        public DirectoryAccount() {
+            this.Subscriptions = new string[0];
+        }
+
         [DirectoryProperty("EmployeeNumber")]
         public virtual string GIN { get; set; }
         [DirectoryProperty("id")]

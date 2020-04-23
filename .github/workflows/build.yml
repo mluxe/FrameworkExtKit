@@ -2,9 +2,9 @@ name: Build
 
 on:
   push:
-    branches: [ master, develop, workflow ]
+    branches: [ master, workflow ]
   pull_request:
-    branches: [ master, develop, workflow ]
+    branches: [ master, workflow ]
 
 jobs:
   build_netcore:

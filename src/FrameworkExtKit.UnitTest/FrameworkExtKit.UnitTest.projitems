@@ -9,10 +9,8 @@
     <Import_RootNamespace>FrameworkExtKit.UnitTest</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)Services\DirectoryService\Fixtures\MemoryDirectoryAccounts.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Services\DirectoryService\MemoryDirectoryAccount.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Services\DirectoryService\MemoryDirectoryService.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Services\DirectoryService\MemoryDirectoryAccountService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\DirectoryServices\Fixtures\MemoryDirectoryAccounts.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\DirectoryServices\MemoryDirectoryAccountService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)Utilities\MemoryDirectoryAccountGenerator.php" />

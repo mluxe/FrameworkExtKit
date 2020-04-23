@@ -34,6 +34,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)DirectoryServices\Exceptions\DirectoryServiceException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DirectoryServices\Linq\LdapQueryTranslator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DirectoryServices\LdapDirectoryService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DirectoryServices\DirectoryAccounts\MemoryDirectoryAccountService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DirectoryServices\DirectoryAccounts\MemoryDirectoryService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)DirectoryServices\DirectoryAccounts\" />
