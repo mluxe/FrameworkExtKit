@@ -80,13 +80,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\FrameworkExtKit.DirectoryServices.Net45\FrameworkExtKit.DirectoryServices.Net45.csproj">
       <Project>{1162d896-7bce-4c38-8255-7b95af0ae64e}</Project>
       <Name>FrameworkExtKit.DirectoryServices.Net45</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="..\..\src\FrameworkExtKit.DirectoryServices.Tests\FrameworkExtKit.DirectoryServices.Tests.projitems" Label="Shared" />
   <Import Project="..\..\src\FrameworkExtKit.UnitTest\FrameworkExtKit.UnitTest.projitems" Label="Shared" />
